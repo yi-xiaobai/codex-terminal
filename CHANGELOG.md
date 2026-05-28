@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.0.4
+
+- Chore: Bump version to 0.0.4
+
 ## 0.0.3
 
 - Fix: Auto-open terminal when sidebar view becomes visible
