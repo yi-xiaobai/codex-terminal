@@ -1,5 +1,15 @@
 # Change Log
 
+## 0.0.3
+
+- Fix: Auto-open terminal when sidebar view becomes visible
+
+
+### 0.0.2
+
+- Fix: Create new terminal instance on each open (prevents reuse issues)
+
+
 ## 0.0.1
 
 - Initial release of Codex Terminal.
