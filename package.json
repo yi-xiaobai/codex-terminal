@@ -1,0 +1,89 @@
+{
+  "name": "codex-terminal",
+  "displayName": "Codex Terminal",
+  "description": "Quick launch Codex in a split terminal",
+  "version": "0.0.1",
+  "publisher": "ajiu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yi-xiaobai/codex-terminal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yi-xiaobai/codex-terminal/issues"
+  },
+  "homepage": "https://github.com/yi-xiaobai/codex-terminal#readme",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:codex-terminal.open",
+    "onView:codexTerminalView"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "codex-terminal-container",
+          "title": "Codex Terminal",
+          "icon": "resources/codex-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "codex-terminal-container": [
+        {
+          "id": "codexTerminalView",
+          "name": "Codex",
+          "icon": "resources/codex-icon.svg",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "codex-terminal.open",
+        "title": "Open Codex Terminal",
+        "category": "Codex",
+        "icon": "$(terminal)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "codex-terminal.open",
+        "key": "ctrl+shift+c",
+        "mac": "cmd+shift+c"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "codex-terminal.open",
+          "when": "view == codexTerminalView",
+          "group": "navigation"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "codex-terminal.open",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^5.0.0"
+  }
+}
