@@ -2,7 +2,7 @@
   "name": "codex-terminal",
   "displayName": "Codex Terminal",
   "description": "Quick launch Codex in a split terminal",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "ajiu",
   "license": "MIT",
   "repository": {
