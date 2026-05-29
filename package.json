@@ -3,7 +3,7 @@
   "displayName": "Codex Terminal",
   "description": "Quick launch Codex in a split terminal",
   "version": "0.0.4",
-  "publisher": "ajiu",
+  "publisher": "jiumaojiu",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -79,7 +79,8 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "lint": "eslint src --ext ts"
+    "lint": "eslint src --ext ts",
+    "build": "vsce package"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
