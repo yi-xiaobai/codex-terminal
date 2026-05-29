@@ -10,6 +10,5 @@ A VS Code extension to quickly launch Codex in a split terminal.
 
 ## Usage
 
-- **Keyboard shortcut**: `Cmd+Shift+C` (Mac) / `Ctrl+Shift+C` (Windows/Linux)
 - **Sidebar**: Click the Codex Terminal icon in the activity bar
 - **Command Palette**: `Cmd+Shift+P` → "Open Codex Terminal"
