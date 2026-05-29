@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.6
+
+- Chore: Bump version to 0.0.6
+
 ## 0.0.5
 
 - Update README.md

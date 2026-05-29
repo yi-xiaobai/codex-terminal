@@ -1,8 +1,8 @@
 {
   "name": "codex-terminal",
-  "displayName": "Codex Terminal",
-  "description": "Quick launch Codex in a split terminal",
-  "version": "0.0.5",
+  "displayName": "Ajiu Codex Terminal",
+  "description": "Ajiu quick launch for Codex in a split terminal",
+  "version": "0.0.6",
   "publisher": "jiumaojiu",
   "license": "MIT",
   "repository": {
@@ -13,6 +13,7 @@
     "url": "https://github.com/yi-xiaobai/codex-terminal/issues"
   },
   "homepage": "https://github.com/yi-xiaobai/codex-terminal#readme",
+  "icon": "resources/marketplace-icon.png",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -80,7 +81,11 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "lint": "eslint src --ext ts",
-    "build": "vsce package"
+    "build": "vsce package",
+    "release": "node scripts/release.js",
+    "release:patch": "node scripts/release.js patch",
+    "release:minor": "node scripts/release.js minor",
+    "release:major": "node scripts/release.js major"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
